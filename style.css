@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: rgb(28, 63, 63);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 18.3%;
+}
+.calcDisplay {
+  height: 10vh;
+  padding-left: 10px;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  position: relative;
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 10px;
+  cursor: move;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+  user-select: none;
+  padding: 13px 0;
+}
+table {
+  text-align: center;
+  border: 1px solid black;
+}
+tr,
+td {
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+
+.ion-icon {
+  font-size: 30px;
+}

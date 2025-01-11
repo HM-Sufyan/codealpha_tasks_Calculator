@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sufyan's Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calcDisplay" id="calcDisplay">
+        <p id="displayText"></p>
+      </div>
+      <div class="calcButtons">
+        <table>
+          <tbody>
+            <tr>
+              <td onclick="Allclear()">C</td>
+              <td onclick="divide()">&divide;</td>
+              <td onclick="times()">&times;</td>
+              <td onclick="removeLast()">
+                <ion-icon name="backspace-outline"></ion-icon>
+              </td>
+            </tr>
+            <tr>
+              <td onclick="seven()">7</td>
+              <td onclick="eight()">8</td>
+              <td onclick="nine()">9</td>
+              <td onclick="minus()">&minus;</td>
+            </tr>
+            <tr>
+              <td onclick="four()">4</td>
+              <td onclick="five()">5</td>
+              <td onclick="six()">6</td>
+              <td onclick="plus()">&plus;</td>
+            </tr>
+            <tr>
+              <td onclick="one()">1</td>
+              <td onclick="two()">2</td>
+              <td onclick="three()">3</td>
+              <td onclick="equal()" rowspan="2">&equals;</td>
+            </tr>
+            <tr>
+              <td onclick="alert('This function coming soon!')">&percnt;</td>
+              <td onclick="zero()">0</td>
+              <td onclick="dot()">&sdot;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ==================== For Icon ================== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
